@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'siri';
+    src: url(../fontes/Sriracha-Regular.ttf) format('truetype');
+}
+
+:root {
+    ---fonte: 'siri';
+}
+
+main {
+    font-family: var(---fonte);
+}
+
+footer > p > span > img {
+    margin: -0.9%;
+    padding-left: 1em;
+    height: 35px;
+    width: 35px;
+    size: 4vh;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
+header {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 30px;
+    font-variant: small-caps;
+    font-size: 5vw;
+}
+
+header > p {
+    padding-bottom: 20px;
+    
+}
+
+ a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(252, 168, 175);
+    text-decoration: none;
+    transition-duration: 0.5s;
+    font-size: 16.4px;
+}
+section {
+    padding: 10vh 0vh 10vh 30px;
+    line-height: 1.5em;
+    font-size: 2vw;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(88, 62, 44);
+    color: white;
+    box-shadow: inset 5px 5px 10px 0px rgba(31, 30, 30, 0.795);
+    background-attachment: fixed;
+    
+}
+
+section.imagem > p {
+    display: inline-block;
+    background-color: rgba(27, 26, 26, 0.568);
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+section#img2 {
+    background-image: url(../imagens/background_flor.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+
+section#img1 {
+    background-image: url(../imagens/background_papel.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 6px 0px;
+}
